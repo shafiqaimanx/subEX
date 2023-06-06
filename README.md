@@ -15,7 +15,7 @@ src='https://img.shields.io/badge/PLATFORM-WINDOWS-blue?style=flat-square&logo=w
 Be careful while using this tool because it can be blocked easily. If you get blocked, just wait a couple of minutes and run it again. On top of that, it only supports the `GOOGLE` engine for now, and it only retrieves the data/subdomains for about `10` pages of Google. Anyways, enjoy! 😉
 
 # Installation
-Well, you can get the prebuilt release right here! <br>
+Well, you can get the prebuilt release right [here](https://github.com/Doct3rJohn/knownproject/releases/tag/v0.1.0)! <br>
 But, if you want to build on your own: _follow the step below_
 ```bash
 git clone https://github.com/Doct3rJohn/knownproject.git
