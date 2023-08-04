@@ -3,7 +3,7 @@ _knownproject_ has been rename to subEX
 
 <p align="center">
     <br>
-    <img alt="Screenshot" src="https://github.com/Doct3rJohn/knownproject/blob/main/img/knownproject-banner.png"/>
+    <img alt="Screenshot" src="https://github.com/Doct3rJohn/subEX/blob/main/img/subEX-banner.png"/>
     <br>
 </p>
 
