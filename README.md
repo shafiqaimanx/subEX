@@ -1,5 +1,5 @@
 # subEX
-_knownproject has been rename to subEX_
+_knownproject_ has been rename to subEX
 
 <p align="center">
     <br>
