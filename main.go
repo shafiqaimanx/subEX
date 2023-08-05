@@ -32,8 +32,6 @@ func main() {
 
 	requestedDomain := src.DomainInputChecker(*domainToEnumerate)
 	requestedPage := src.PageInputChecker(*numberOfPages)
-	fmt.Println(requestedDomain)
-	fmt.Println(requestedPage)
 
 	fmt.Println(src.SUBEXBanner())
 	fmt.Printf("%s If you get blocked by search engine providers\n", src.WARN)
