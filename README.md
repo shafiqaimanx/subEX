@@ -13,23 +13,35 @@ src='https://img.shields.io/badge/PLATFORM-WINDOWS-blue?style=flat-square&logo=w
 `subEX` is the CLI tool for findings any subdomain by using the dorking technique or in other word, in passive way for grabbing subdomains.
 
 # Disclaimer
-Be careful while using this tool because it can be blocked easily. If you get blocked, just wait a couple of minutes and run it again. On top of that, it only supports the `GOOGLE` engine for now, and it only retrieves the data/subdomains for about `10` pages of Google. Anyways, enjoy! 😉
+Be careful while using this tool because it can be blocked easily. If you get blocked, just wait a couple of minutes and run it again. The author assumes no responsibility.
+
+# Description
+`subEX` is the tool for passively enumerating subdomains. For now, it only supports the `GOOGLE` engine, and it retrieves the subdomains for about `10` pages long. However, by supplying the `-i` flag, you can retrieve any amount of subdomains in the desired pages. Anyways, enjoy! 😉
 
 # Installation
-Well, you can get the prebuilt release right [here](https://github.com/Doct3rJohn/subEX/releases/tag/v0.1.0)! <br>
+`subEX` requires **go1.19** to install successfully. Run the following command to install the latest version
+
+```bash
+go install -v github.com/Doct3rJohn/subEX@latest
+```
+
 But, if you want to build on your own: _follow the step below_
 ```bash
 git clone https://github.com/Doct3rJohn/subEX.git
 cd subEX
-go build main.go
+go build -o subEX main.go
 ```
+
+Well, you can get the prebuilt release right [here](https://github.com/Doct3rJohn/subEX/releases/tag/v0.1.1)!
 
 # Usage
 ```bash
-[+] Usage: subEX -d <example.com>
-[+] Options:
-        -d DOMAIN       Domain name to enumerate subdomains
+[INFO] Usage: subEX -d <example.com>
+Options:
+        -d DOMAIN           Domain to enumerate
+        -i INTERACTION      Page interaction [default:10]
 ```
+
 
 # License
 License [MIT](https://raw.githubusercontent.com/Doct3rJohn/subEX/main/LICENSE)

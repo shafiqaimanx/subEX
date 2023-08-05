@@ -1,3 +1,3 @@
-module github.com/Doct3rJohn/knownproject
+module github.com/Doct3rJohn/subEX
 
 go 1.19
