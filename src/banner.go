@@ -22,6 +22,6 @@ func SUBEXBanner() string {
 	fmt.Println("          _    ___ __  _ ")
 	fmt.Println(" ___ _ _ | |_ | __>\\ \\/     subEX - CLI tool for finding subdomain")
 	fmt.Println("<_-<| | || . \\| _>  \\ \\     > _shafiqaiman_")
-	fmt.Println("/__/`___||___/|___>_/\\_\\    > v0.1.1")
+	fmt.Println("/__/`___||___/|___>_/\\_\\    > v0.2.0")
 	return ""
 }
