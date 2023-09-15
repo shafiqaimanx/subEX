@@ -33,7 +33,7 @@ cd subEX
 go build -o subEX main.go
 ```
 
-Well, you can get the prebuilt release right [here](https://github.com/Doct3rJohn/subEX/releases/tag/v0.1.1)!
+Well, you can get the prebuilt release right [here](https://github.com/shafiqaimanx/subEX/releases/tag/v0.2.0)!
 
 # Usage
 ```bash
