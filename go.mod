@@ -1,4 +1,4 @@
-module github.com/shafiqaimanx/subEX
+module github.com/shafiqaimanx/subex
 
 go 1.21.1
 

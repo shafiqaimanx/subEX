@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"flag"
 
-	"github.com/shafiqaimanx/subEX/src"
-	"github.com/shafiqaimanx/subEX/src/query"
-	"github.com/shafiqaimanx/subEX/src/helper"
+	"github.com/shafiqaimanx/subex/src"
+	"github.com/shafiqaimanx/subex/src/query"
+	"github.com/shafiqaimanx/subex/src/helper"
 )
 
 func main() {

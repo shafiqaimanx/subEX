@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/shafiqaimanx/subEX/src"
+	"github.com/shafiqaimanx/subex/src"
 )
 
 func DomainInputChecker(requestedDomain string) string {

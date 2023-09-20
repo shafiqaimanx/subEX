@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/shafiqaimanx/subEX/src"
-	"github.com/shafiqaimanx/subEX/src/core"
-	"github.com/shafiqaimanx/subEX/src/helper"
+	"github.com/shafiqaimanx/subex/src"
+	"github.com/shafiqaimanx/subex/src/core"
+	"github.com/shafiqaimanx/subex/src/helper"
 )
 
 func DNSdumpsterWorker(requestedDomain string, urlRequested string, requestedDataBody []byte, requestedHeaders map[string]string, wg *sync.WaitGroup, resultChan chan<- []string) {

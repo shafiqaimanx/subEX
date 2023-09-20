@@ -1,43 +1,43 @@
-# subEX
-_knownproject_ has been rename to **subEX**
+# subex
+_knownproject_ has been rename to **subex**
 
 <p align="center">
     <br>
-    <img alt="Screenshot" src="https://github.com/shafiqaimanx/subEX/blob/main/img/subEX-banner.png"/>
+    <img alt="Screenshot" src="https://github.com/shafiqaimanx/subex/blob/main/img/subex-banner.png"/>
     <br>
 </p>
 
 <img src='https://img.shields.io/badge/MADE%20WITH-GO-teal?style=flat-square&logo=go'/> <img src='https://img.shields.io/badge/PLATFORM-LINUX-green?style=flat-square&logo=linux'/> <img 
 src='https://img.shields.io/badge/PLATFORM-WINDOWS-blue?style=flat-square&logo=windows'/> <img src='https://img.shields.io/badge/PLATFORM-DARWIN-silver?style=flat-square&logo=apple'/> <img src='https://img.shields.io/badge/LICENSE-MIT-orange?style=flat-square&logo=creativecommons'/>
 
-`subEX` is a CLI tool for finding any subdomains in passive way possible.
+`subex` is a CLI tool for finding any subdomains in passive way possible.
 
 # Disclaimer
 Be careful while using this tool because it can be blocked easily. If you get blocked, just wait a couple of minutes and run it again. 
 > The author assumes no responsibility.
 
 # Description
-`subEX` is a tool for passively enumerating subdomains. For now, it's only supports `DNSdumpster` and `GOOGLE` as an engine. Futhermore, by supplying the `-i` flag, you can retrieve any amount of subdomains in the desired (google) pages. Anyways, enjoy! 😉
+`subex` is a tool for passively enumerating subdomains. For now, it's only supports `DNSdumpster` and `GOOGLE` as an engine. Futhermore, by supplying the `-i` flag, you can retrieve any amount of subdomains in the desired (google) pages. Anyways, enjoy! 😉
 
 # Installation
-`subEX` requires **go1.21** to install successfully. Run the following command to install the latest version
+`subex` requires **go1.21** to install successfully. Run the following command to install the latest version
 
 ```bash
-go install -v github.com/shafiqaimanx/subEX@latest
+go install -v github.com/shafiqaimanx/subex@latest
 ```
 
 But, if you want to build on your own: _follow the step below_
 ```bash
-git clone https://github.com/shafiqaimanx/subEX.git
-cd subEX
-go build -o subEX main.go
+git clone https://github.com/shafiqaimanx/subex.git
+cd subex
+go build -o subex main.go
 ```
 
 Well, you can get the prebuilt release right [here](https://github.com/shafiqaimanx/subEX/releases/tag/v0.2.0)!
 
 # Usage
 ```bash
-[INFO] Usage: subEX -d <example.com>
+[INFO] Usage: subex -d <example.com>
 Options:
         -d DOMAIN           Domain to enumerate
         -i INTERACTION      Page interaction [default:10]
