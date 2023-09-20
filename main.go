@@ -1,13 +1,13 @@
 package main
 
 import (
-	"os"
-	"fmt"
 	"flag"
+	"fmt"
+	"os"
 
-	"github.com/shafiqaimanx/subex/src"
-	"github.com/shafiqaimanx/subex/src/query"
-	"github.com/shafiqaimanx/subex/src/helper"
+	"github.com/shafiqaimanx/subEX/src"
+	"github.com/shafiqaimanx/subEX/src/helper"
+	"github.com/shafiqaimanx/subEX/src/query"
 )
 
 func main() {
@@ -20,6 +20,7 @@ func main() {
 		fmt.Println("	-d DOMAIN           Domain to enumerate")
 		fmt.Printf("	-i INTERACTION      Page interaction [%sdefault:10%s]\n", src.GREEN, src.RESET)
 		fmt.Printf("	-o OUTPUT           Output results to file [%sdefault:subex.txt%s]\n", src.GREEN, src.RESET)
+		fmt.Println(src.SUBEXBanner())
 	}
 	flag.Parse()
 

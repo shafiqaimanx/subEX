@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/shafiqaimanx/subex/src"
+	"github.com/shafiqaimanx/subEX/src"
 	"github.com/PuerkitoBio/goquery"
 )
 

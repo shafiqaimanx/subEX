@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/shafiqaimanx/subex/src"
-	"github.com/shafiqaimanx/subex/src/core"
-	"github.com/shafiqaimanx/subex/src/helper"
+	"github.com/shafiqaimanx/subEX/src"
+	"github.com/shafiqaimanx/subEX/src/core"
+	"github.com/shafiqaimanx/subEX/src/helper"
 )
 
 func GoogleSearchCrawler(requestedDomain string, requestedPage int) []string {
