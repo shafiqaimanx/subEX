@@ -8,3 +8,5 @@ require (
 	github.com/andybalholm/cascadia v1.3.2 // indirect
 	golang.org/x/net v0.15.0 // indirect
 )
+
+replace github.com/shafiqaimanx/subEX => github.com/shafiqaimanx/subex v0.2.0
