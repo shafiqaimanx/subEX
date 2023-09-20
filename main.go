@@ -20,7 +20,6 @@ func main() {
 		fmt.Println("	-d DOMAIN           Domain to enumerate")
 		fmt.Printf("	-i INTERACTION      Page interaction [%sdefault:10%s]\n", src.GREEN, src.RESET)
 		fmt.Printf("	-o OUTPUT           Output results to file [%sdefault:subex.txt%s]\n", src.GREEN, src.RESET)
-		fmt.Println(src.SUBEXBanner())
 	}
 	flag.Parse()
 
