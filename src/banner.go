@@ -17,18 +17,9 @@ const (
 	RESULT  = "[" + "\033[38;5;213m" 	+ "RSLT" + "\033[0m" + "]"
 )
 
-//func SUBEXBanner() string {
-//	fmt.Println("     	  _            ")
-//	fmt.Println(" ___ _ _ | |_  ___ __  		subex - CLI tool for finding subdomain")
-//   	fmt.Println("<_-<| | || . \\/ ._>\\ \\/		> _shafiqaiman_")
-//   	fmt.Println("/__/`___||___/\\___./\\_\\ 	> v0.2.0")
-//	return ""
-//}
-
-
 func SUBEXBanner() string {
 	fmt.Println("          _    ___ __  _ ")
-	fmt.Println(" ___ _ _ | |_ | __>\\ \\/  	subex - CLI tool for finding subdomain")
+	fmt.Println(" ___ _ _ | |_ | __>\\ \\/  	subEX - CLI tool for finding subdomain")
    	fmt.Println("<_-<| | || . \\| _>  \\ \\  	> _shafiqaiman_")
    	fmt.Println("/__/`___||___/|___>_/\\_\\ 	> v0.2.0")
 	   return ""
