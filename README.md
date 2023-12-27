@@ -1,49 +1,43 @@
-# subEX
-_knownproject_ has been rename to **subEX**
-
 <p align="center">
-    <br>
-    <img alt="Screenshot" src="https://github.com/shafiqaimanx/subEX/blob/main/img/subEX-banner.png"/>
-    <br>
+    <img src="https://github.com/shafiqaimanx/subEX/blob/main/img/subex.png"/>
 </p>
 
-<img src='https://img.shields.io/badge/MADE%20WITH-GO-teal?style=flat-square&logo=go'/> <img src='https://img.shields.io/badge/PLATFORM-LINUX-green?style=flat-square&logo=linux'/> <img 
-src='https://img.shields.io/badge/PLATFORM-WINDOWS-blue?style=flat-square&logo=windows'/> <img src='https://img.shields.io/badge/PLATFORM-DARWIN-silver?style=flat-square&logo=apple'/> <img src='https://img.shields.io/badge/LICENSE-MIT-orange?style=flat-square&logo=creativecommons'/>
+<p align="center">
+    <img src="https://img.shields.io/badge/made%20with-golang-teal?style=flat&logo=go&logoColor=white&labelColor=595959&color=66cdaa"/>
+</p>
 
-`subEX` is a CLI tool for finding any subdomains in passive way possible.
+<p align="center">
+    <img src="https://img.shields.io/badge/platform-linux-green?style=flat&logo=linux&logoColor=white&labelColor=595959&color=99ff99"/>
+    <img src="https://img.shields.io/badge/platform-windows-green?style=flat&logo=windows&logoColor=white&labelColor=595959&color=80d4ff"/>
+    <img src="https://img.shields.io/badge/platform-apple-green?style=flat&logo=apple&logoColor=white&labelColor=595959&color=e6e6e6"/>
+    <img src="https://img.shields.io/badge/license-MIT-green?style=flat&logo=creativecommons&logoColor=white&labelColor=595959&color=ffff80"/>
+</p>
 
-# Disclaimer
-Be careful while using this tool because it can be blocked easily. If you get blocked, just wait a couple of minutes and run it again. 
-> The author assumes no responsibility.
+## ⛔ Disclaimer
+This tool can be easily blocked by search engines or any platform it's used on. If it gets blocked, simply wait a couple of minutes and run it again. **The author assumes no responsibility for any misuse of this tool!**
 
-# Description
-`subEX` is a tool for passively enumerating subdomains. For now, it's only supports `DNSdumpster` and `GOOGLE` as an engine. Futhermore, by supplying the `-i` flag, you can retrieve any amount of subdomains in the desired (google) pages. Anyways, enjoy! 😉
+## 📖 Description
+subEX is a CLI tool for passively enumerating subdomains. It leverages various online sources and search engines, including classic Google dorks. On top of that, it doesn't guarantee to be fast or accurate but it works! 😉
 
-# Installation
-`subEX` requires **go1.21** to install successfully. Run the following command to install the latest version
+## 📦 Installation
+`subEX` requires <b>go1.21+</b> to install successfully. Run the following command to install the latest version.
 
 ```bash
 go install -v github.com/shafiqaimanx/subEX@latest
 ```
 
-But, if you want to build on your own: _follow the step below_
+###### From the source.
+
 ```bash
 git clone https://github.com/shafiqaimanx/subEX.git
 cd subEX
 go build -o subEX main.go
 ```
 
-Well, you can get the prebuilt release right [here](https://github.com/shafiqaimanx/subEX/releases/tag/v0.2.0)!
+###### Prebuilt release right [here](https://github.com/shafiqaimanx/subEX/releases)!
 
-# Usage
-```bash
-[INFO] Usage: subEX -d <example.com>
-Options:
-        -d DOMAIN           Domain to enumerate
-        -i INTERACTION      Page interaction [default:10]
-        -o OUTPUT           Output results to file [default:subEX.txt]
-```
+## 🌐 subEX Usages
+<img src="https://github.com/shafiqaimanx/subEX/blob/main/img/subex_usage.png"/>
 
-
-# License
-License [MIT](https://raw.githubusercontent.com/Doct3rJohn/subEX/main/LICENSE)
+## ©️ License
+This tool is Licensed under [MIT](https://raw.githubusercontent.com/shafiqaimanx/subEX/main/LICENSE).

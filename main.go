@@ -11,15 +11,11 @@ import (
 )
 
 func main() {
-	domainToEnumerate 	:= flag.String("d", "", "Domain to enumerate")
-	numberOfPages		:= flag.String("i", "10", "Page interaction [default:10]")
-	nameOfOutputFile	:= flag.String("o", "subex.txt", "Output results to file")
-	flag.Usage = func() {
-		fmt.Printf("%s Usage: %s -d <example.com>\n", src.INFO, os.Args[0])
-		fmt.Println("Options:")
-		fmt.Println("	-d DOMAIN           Domain to enumerate")
-		fmt.Printf("	-i INTERACTION      Page interaction [%sdefault:10%s]\n", src.GREEN, src.RESET)
-		fmt.Printf("	-o OUTPUT           Output results to file [%sdefault:subex.txt%s]\n", src.GREEN, src.RESET)
+	domainToEnumerate 	:= flag.String("d", "", "")
+	numberOfPages		:= flag.String("i", "10", "")
+	nameOfOutputFile	:= flag.String("o", "subex.txt", "")
+	flag.Usage = func() {		
+		src.HelpMenu()
 	}
 	flag.Parse()
 
@@ -32,20 +28,18 @@ func main() {
 	requestedPage	:= helper.PageInputChecker(*numberOfPages)
 	outputFileName 	:= helper.DefaultFileName(*nameOfOutputFile)
 
-	fmt.Println(src.SUBEXBanner())
-	fmt.Printf("%s If you get blocked by search engine providers\n", src.WARN)
-	fmt.Printf("%s The author assumes no responsibility\n", src.WARN)
-	fmt.Printf("%s Enumerating subdomains for (%s%s%s)\n", src.INFO, src.GREEN, requestedDomain, src.RESET)
-
+	src.DisclaimerInfo(requestedDomain)
 	q1 := query.QueryDNSdumpster(requestedDomain)
 	q2 := query.QueryGoogleSearch(requestedDomain, requestedPage)
-		
+	q3 := query.QueryCrtsh(requestedDomain)
+	q4 := query.QueryYahooSearch(requestedDomain, requestedPage)
+			
 	file, err := os.Create(outputFileName)
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	dupValuesList := append(q1, q2...)
+	dupValuesList := append(append(append(q1, q2...), q3...), q4...)
 	finalDomainList := helper.RemoveDuplicates(dupValuesList)
 	for _, subDomain := range finalDomainList {
 		fmt.Println(subDomain)
@@ -54,6 +48,7 @@ func main() {
 			fmt.Println(err)
 		}
 	}
-	fmt.Printf("%s Done enumerating\n", src.OKAY)
-	fmt.Printf("%s Output saved in (%s%s%s)\n", src.INFO, src.GREEN, outputFileName, src.RESET)
+	fmt.Printf("%s═════════════════════════════════════════════════════════════════════%s\n", src.MEDIUMAQUAMARINE, src.RESET)
+	fmt.Printf("%s: Done enumerating!\n", src.BINFO)
+	fmt.Printf("%s: Output saved in %s%s%s%s\n", src.BINFO, src.MEDIUMAQUAMARINE, src.ITALIC, outputFileName, src.RESET)
 }

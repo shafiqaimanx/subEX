@@ -16,7 +16,7 @@ func DomainInputChecker(requestedDomain string) string {
 	if checkPattern {
 		userInputDomain = requestedDomain
 	} else {
-		fmt.Printf("%s Invalid domain format\n", src.ERROR)
+		fmt.Printf("%s: %sInvalid domain format!%s\n", src.BERROR, src.ITALIC, src.RESET)
 		os.Exit(0)
 	}
 	return userInputDomain
@@ -28,11 +28,11 @@ func PageInputChecker(requestedPage string) int {
 	if checkPattern {
 		userInputPage, err := strconv.Atoi(requestedPage)
 		if err != nil {
-			fmt.Printf("%s %v\n", src.ERROR, err)
+			fmt.Printf("%s: %v\n", src.BERROR, err)
 		}
 		return userInputPage
 	} else {
-		fmt.Printf("%s Invalid input value\n", src.ERROR)
+		fmt.Printf("%s: %sInvalid input value!%s\n", src.BERROR, src.ITALIC, src.RESET)
 		os.Exit(0)
 	}
 	return 0
